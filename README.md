@@ -17,10 +17,11 @@ npm install Install Playwright browsers:
 
 install (Optional)use Chromium stable chromium-1187 instead of bundled Chromium:
 
-bash Copy code  chrome ▶️ Running Tests Run all tests in headed mode (browser visible):
+Install playwright:
 npx playwright install
 
 Run in headless mode (faster, no UI):
 npx playwright test tests/parabank.e2e.spec.js --headed 
+
 
 
