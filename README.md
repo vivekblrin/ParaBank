@@ -13,12 +13,14 @@ This project contains end-to-end (E2E) Playwright tests for ParaBank.
 ⚙️ Prerequisites
 
 Install dependencies: 
-`bashnpm install Install Playwright browsers:
+npm install Install Playwright browsers:
 
-bash Copy code npx playwright install (Optional) To use Chromium stable chromium-1187 instead of bundled Chromium:
+install (Optional)use Chromium stable chromium-1187 instead of bundled Chromium:
 
-bash Copy code npx playwright install chrome ▶️ Running Tests Run all tests in headed mode (browser visible):
+bash Copy code  chrome ▶️ Running Tests Run all tests in headed mode (browser visible):
+npx playwright install
 
-bash Copy code npx playwright test tests/parabank.e2e.spec.js --headed Run in headless mode (faster, no UI):
+Run in headless mode (faster, no UI):
+npx playwright test tests/parabank.e2e.spec.js --headed 
 
-bash Copy code npx playwright test tests/parabank.e2e.spec.js
+
