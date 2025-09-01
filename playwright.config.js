@@ -1,14 +1,10 @@
-// playwright.config.js
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests',
-  timeout: 30 * 1000,
   use: {
-    headless: false, // set to true if you don’t want browser UI
-    viewport: { width: 1280, height: 720 },
-    screenshot: 'on',
-    video: 'on-first-retry',
-    baseURL: 'https://parabank.parasoft.com',
+    headless: false,
+    browserName: 'chromium',
+    channel: undefined, // don’t use Chrome stable
+    executablePath: 'C:\\Users\\Lenovo\\AppData\\Local\\ms-playwright\\chromium-1187\\chrome-win\\chrome.exe',
   },
 });
